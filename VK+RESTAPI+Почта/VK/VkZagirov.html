@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Добро пожаловать |ВКонтакте</title>
+		<meta charset = "UTF-8">
+		<link rel="shortcut icon" href="https://vk.com/images/icons/favicons/fav_logo.ico?6">
+		<link rel="stylesheet" href="Vkontakte.css">
+	</head>
+	<body>
+		<header>
+            <div id="wrapperHeader">
+                <div id="logo"></div>    
+                <input type="text" id="search" placeholder="Поиск">
+                <div id="lang">Switch to English</div>
+            </div>
+        </header>
+		<div id = "content">
+			<div id = "leftContent">
+				<div id = "leftText">
+					<div id = "mainLeftText">
+						ВКонтакте для мобильных устройств
+					</div>
+					<div id = "subLeftText">
+						Установите официальное мобильное приложение ВКонтакте и оставайтесь <br>в курсе новостей Ваших друзей, где бы Вы ни находились.
+					</div>
+				</div>
+			
+				<div id = "image">
+					<div id = "leftPhone">
+						<a id = "androidHref" href = "https://play.google.com/store/apps/details?id=com.vkontakte.android"></a>
+					</div>
+					<div id = "rightPhone">
+						<a id = "IPhoneHref" href = "https://itunes.apple.com/ru/app/id564177498"></a>
+					</div>
+				</div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<div id = "vkForPhones">
+					<div class = "phoneHref" id = "android">VK для Android</div>
+					<div class = "phoneHref" id = "IPhone"> VK для iPhone</div>
+				</div>
+				<br>
+				<div id = "allProducts">
+					<a id = "allProductsHref" href = "https://vk.com/products">Все продукты</a>
+				</div>
+			</div>
+			<div id ="rightContent">
+				<form id = "loginBox" method="POST" action="https://localhost:44343/weatherforecast/">
+					<input class = "label" type= "text" placeholder="Телефон или email"name = "login"/>
+					<input class = "label" type= "text" placeholder="Пароль"name = "password"/>
+					<div id = "bottomContainer">
+						<input id ="enterBtn" type= "submit" value = "Войти" name = "Войти"/>
+						<a id = "passHref" href = "https://vk.com/restore">Забыли пароль?</a>
+					</div>
+				</form>
+				<form id = "registrationBox" method="POST" action="https://localhost:44343/weatherforecast/post/registration">
+					<div id = "textDiv">
+						<div id = "mainText">Впервые ВКонтакте?</div>
+						<div id = "subText">Моментальная регистрация</div>
+					</div>
+					<input class = "label" type= "text" placeholder="Ваше имя"name = "name"/>
+					<input class = "label" type= "text" placeholder="Ваша фамилия"name = "surname"/>
+					<div id = "dateDiv">
+						<div id = "dateText">Дата рождения</div>
+						<div id = "dateSelectors">
+							<div id = "days">
+								<select class = "selector" name="day" form="registrationBox">
+									<option>День</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>18</option>
+									<option>24</option>
+									<option>31</option>
+								</select>
+							</div>
+							<div>
+								<select id = "month" class = "selector" name="month" form="registrationBox">
+									<option>Месяц</option>
+									<option>Января</option>
+									<option>Февраля</option>
+									<option>Марта</option>
+									<option>Апреля</option>
+									<option>Мая</option>
+									<option>Июня</option>
+									<option>Июля</option>
+									<option>Августа</option>
+									<option>Сентября</option>
+									<option>Октября</option>
+									<option>Ноября</option>
+									<option>Декабря</option>
+								</select>
+							</div>
+							<div id = "years">
+								<select class = "selector" name="year" form="registrationBox">
+									<option>Год</option>
+									<option>2020</option>
+									<option>2019</option>
+									<option>2007</option>
+									<option>2004</option>
+									<option>2001</option>
+									<option>1986</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div id = "btns">
+						<input class = "Btn" type= "submit" value = "Продолжить регистрацию" name = "registration"/>
+						<div id = "secondBtn" class = "Btn">Войти через Facebook</div>
+					</div>
+				</form>
+				<div id = "textBox">
+					<div id = "text">После регистрации Вы получите доступ ко всем возможностям VK Connect.</div>
+					<a id = "bottomHref" href = "https://connect.vk.com/promo">Узнать больше</a>
+				</div>
+			</div>
+		</div>
+		<div id = "bottomContent">
+				<div id = "left">
+					<a id = "VkText" class = "bottmHref" href = "https://vk.com/about">ВКонтакте</a>
+					<div id = "VkSubText">© 2006–2020</div>
+				</div>
+				<div id = "middle">
+					<a id = "aboutVk" class = "bottmHref" href = "https://vk.com/about">О ВКонтакте</a>
+					<a id = "rules" class = "bottmHref" href = "https://vk.com/terms">Правила</a>
+					<a id = "forBusines" class = "bottmHref" href = "https://vk.com/biz?utm_source=vk_inside&utm_medium=authorization">Для бизнеса</a>
+					<a id = "forDevs" class = "bottmHref" href = "https://vk.com/dev">Разработчикам</a>
+				</div>
+				<div id = "right">
+					<a class = bottmHref>Русский</a>
+					<a class = bottmHref>Українська</a>
+					<a class = bottmHref>English</a>
+					<a class = bottmHref>все языки »</a>
+				</div>
+		</div>
+	</body>
+</html>
